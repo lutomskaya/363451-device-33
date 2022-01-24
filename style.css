@@ -50,9 +50,13 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
 /*header*/
 
-.page-header {
+.main-header {
   background-color: #FFE17F;
 }
 
@@ -69,7 +73,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style: none;
 }
-
+.main-nav a,
 .main-nav__item a {
   font-family: 'Raleway', Arial, sans-serif;
   font-weight: 800;
@@ -92,14 +96,15 @@ input[type="radio"].visually-hidden {
 
 /*slider*/
 
-.slyder-list__left,
-.slider-list__right {
+.slider-left__list,
+.slider-right__list,
+.categories__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.slider-item__left {
+.slider-left__item {
   width: 560px;
   height: 560px;
 }
@@ -122,4 +127,248 @@ dt {
   line-height: 30px;
 }
 
+/*categories*/
 
+.categories__img {
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+}
+
+.categories__item h3 {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+/*service-slider*/
+
+.service-slider {
+  background-color: #F0F0F0;
+}
+
+.delivery-main__title {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+
+  color: #000000;
+}
+
+.delivery-main__text {
+  font-family: 'Rubik', Arial, sans-serif;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #444444; 
+}
+
+.service-slider__link {
+  display: block;
+  width: 100%;
+}
+
+/*info-block*/
+
+.info-block {
+  display: flex;
+}
+
+.info-block__title {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+
+  color: #000000;
+}
+
+.info-block__text {
+  font-family: 'Rubik', Arial, sans-serif;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #444444; 
+}
+
+
+.company-info__item {
+  font-family: 'Rubik', Arial, sans-serif;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+
+  color: #444444; 
+}
+
+.contacts__title {
+  font-family: 'Rubik', Arial, sans-serif;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #444444; 
+}
+
+.contacts__phone {
+  text-decoration: underline;
+  color: #444444;
+}
+
+/*subscription*/
+
+.subscription {
+  background-color: #F0F0F0;
+}
+
+.subscription__title {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+
+  color: #000000;
+}
+
+.subscription__text {
+  font-family: 'Rubik', Arial, sans-serif;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #444444; 
+}
+
+/*footer*/
+
+.main-footer {
+  background-color: #444444;
+}
+
+.logo-footer {
+  display: block;
+  width: 145px;
+  height: 36px;
+}
+
+.main-footer__text,
+.main-footer__phone {
+  font-family: 'Rubik', Arial, sans-serif;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #FFFFFF;
+}
+
+.main-nav--footer a {
+  color: #FFFFFF;
+}
+
+.socials-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.copyright {
+  display: block;
+  width: 115px;
+  height: 33px;
+}
+
+/*catalog*/
+
+.main-catalog__title {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+
+  color: #000000;
+}
+
+.breadcrumbs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs__link {
+  font-family: 'Rubik', Arial, sans-serif;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #000000;
+}
+
+/*sorting*/
+
+.sorting__title {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.sorting__text {
+  font-family: 'Rubik', Arial, sans-serif;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #000000;
+}
+
+/*catalog-product*/
+
+.catalog-product__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-product__item {
+  display: block;
+  width: 360px;
+  height: 452px;
+}
+
+.catalog-product__text {
+  font-family: 'Rubik', Arial, sans-serif;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+
+  color: #000000;
+}
+
+.catalog-product__price {
+  font-family: 'Rubik', Arial, sans-serif;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #444444;
+}
