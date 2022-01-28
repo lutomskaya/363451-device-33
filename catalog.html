@@ -8,7 +8,7 @@
   <body>
     <header class="main-header">
       <a href="./index.html" class="logo" aria-label="Логотип Девайс">
-        <img src="./image/logo.png" alt="Логотип Девайс" width="145" height="36">
+        <img src="./image/Logo.svg" alt="Логотип Девайс" width="145" height="36">
       </a>
       <div class="main-nav main-header__bar">
         <form class="main-header__form" action="https://echo.htmlacademy.ru" method="get">
@@ -27,7 +27,6 @@
         </div>
       </div>
       <nav class="main-catalog main-nav">
-        <!--  тут не знаю кнопка это или элемент списка навигации (main-nav__list) с ссылкой? -->
         <a href="./catalog.html">Каталог товаров</a>
         <ul class="main-catalog__list">
           <li class="main-catalog__item"><a href="#" class="main-catalog__link">Виртуальная реальность</a></li>
@@ -54,9 +53,15 @@
       <h1 class="main-catalog__title">Моноподы для селфи</h1>
       <div class="breadcrumbs">
         <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item"><a href="./index.html" class="breadcrumbs__link">Главная</a></li>
-          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог товаров</a></li>
-          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Моноподы для селфи</a></li>
+          <li class="breadcrumbs__item">
+            <a href="./index.html" class="breadcrumbs__link">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Моноподы для селфи</a>
+          </li>
         </ul>
       </div>
       <form class="filter" action="https://echo.htmlacademy.ru" method="get">
@@ -72,10 +77,10 @@
           </div>
           <div class="price-controls">
             <label class="price-controls-min" for="price-controls-min">
-              <input id="price-controls-min" type="text" value="от 0">
+            <input id="price-controls-min" type="text" value="от 0">
             </label>
             <label class="price-controls-max" for="price-controls-max">
-              <input id="price-controls-max" type="text" value="до 5000">
+            <input id="price-controls-max" type="text" value="до 5000">
             </label>
           </div>
         </fieldset>
@@ -84,23 +89,23 @@
           <ul class="filter-color__list">
             <li class="filter-color__item">
               <input class="filter-input" id="checkbox-black" type="checkbox" name="checkbox" value="Черный" checked>
-                <label for="checkbox-black">Черный</label>
+              <label for="checkbox-black">Черный</label>
             </li>
             <li class="filter-color__item">
               <input class="filter-input" id="checkbox-white" type="checkbox" name="checkbox" value="Белый" checked>
-                <label for="checkbox-white">Белый</label>
+              <label for="checkbox-white">Белый</label>
             </li>
             <li class="filter-color__item">
               <input class="filter-input" id="checkbox-blue" type="checkbox" name="checkbox" value="Синий">
-                <label for="checkbox-blue">Синий</label>
+              <label for="checkbox-blue">Синий</label>
             </li>
             <li class="filter-color__item">
               <input class="filter-input" id="checkbox-red" type="checkbox" name="checkbox" value="Красный">
-                <label for="checkbox-red">Красный</label>
+              <label for="checkbox-red">Красный</label>
             </li>
             <li class="filter-color__item">
               <input class="filter-input" id="checkbox-pink" type="checkbox" name="checkbox" value="Розовый">
-                <label for="checkbox-pink">Розовый</label>
+              <label for="checkbox-pink">Розовый</label>
             </li>
           </ul>  
         </fieldset>
@@ -109,11 +114,11 @@
           <ul class="filter-bluetooth__list">
             <li class="filter-bluetooth__item">
               <input class="filter-input" id="radio-yes" type="radio" name="radio" value="yes" checked>
-                <label for="radio-yes">Есть</label>
+              <label for="radio-yes">Есть</label>
             </li>
             <li class="filter-bluetooth__item">
               <input class="filter-input" id="radio-no" type="radio" name="radio" value="no">
-                <label for="radio-no">Нет</label>
+              <label for="radio-no">Нет</label>
             </li>
           </ul>
         </fieldset>
@@ -127,22 +132,22 @@
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog-product__list">
           <li class="catalog-product__item">
-            <img src="./image/product-2.png" alt="Любительская селфи-палка" width="360" height="380">
+            <img src="./image/catalog/product-1.png" alt="Любительская селфи-палка" width="360" height="380">
             <p class="catalog-product__text">Любительская селфи-палка</p>
             <p class="catalog-product__price">500 Р</p>
           </li>
           <li class="catalog-product__item">
-            <img src="./image/product-3.png" alt="Профессиональная селфи-палка" width="360" height="380">
+            <img src="./image/catalog/product-2.png" alt="Профессиональная селфи-палка" width="360" height="380">
             <p class="catalog-product__text">Профессиональная селфи-палка</p>
             <p class="catalog-product__price">1500 Р</p>
           </li>
           <li class="catalog-product__item">
-            <img src="./image/product-4.png" alt="Непотопляемая селфи-палка" width="360" height="380">
+            <img src="./image/catalog/product-3.png" alt="Непотопляемая селфи-палка" width="360" height="380">
             <p class="catalog-product__text">Непотопляемая селфи-палка</p>
             <p class="catalog-product__price">2500 Р</p>
           </li>
           <li class="catalog-product__item">
-            <img src="./image/product-5.png" alt="Селфи-палка Следуй за мной" width="360" height="380">
+            <img src="./image/catalog/product-4.png" alt="Селфи-палка Следуй за мной" width="360" height="380">
             <p class="catalog-product__text">Селфи-палка "Следуй за мной"</p>
             <p class="catalog-product__price">1500 Р</p>
           </li>
@@ -165,7 +170,7 @@
       <div class="main-footer__inner container">
         <div class="main-footer__content">
           <a class="logo-footer" aria-label="Логотип Девайс">
-            <img src="./image/Group.png" alt="Логотип Девайс" width="145" height="36">
+            <img src="./image/footer/Logo-footer.svg" alt="Логотип Девайс" width="145" height="36">
           </a>
           <p class="main-footer__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </div>
@@ -187,13 +192,25 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <div class="socials">
             <ul class="socials-list">
-              <li class="socials-link"><a href="https://www.facebook.com/htmlacademy"><img src="./image/Vector1.png" width="9" height="18" alt="Фэйсбук"></a></li>
-              <li class="socials-link"><a href="https://www.instagram.com/htmlacademy"><img src="./image/Vector.png" width="16" height="16" alt="Инстаграм"></a></li>
-              <li class="socials-link"><a href="https://www.twitter.com/htmlacademy"><img src="./image/Vector3.png" width="15" height="14" alt="Твиттер"></a></li>
+              <li class="socials-link">
+                <a href="https://www.facebook.com/htmlacademy">
+                  <img src="./image/footer/facebook.svg" width="9" height="18" alt="Фэйсбук">
+                </a>
+              </li>
+              <li class="socials-link">
+                <a href="https://www.instagram.com/htmlacademy">
+                  <img src="./image/footer/instagram.svg" width="16" height="16" alt="Инстаграм">
+                </a>
+              </li>
+              <li class="socials-link">
+                <a href="https://www.twitter.com/htmlacademy">
+                  <img src="./image/footer/twitter.svg" width="15" height="14" alt="Твиттер">
+                </a>
+              </li>
             </ul>
           </div> 
           <a href="https://htmlacademy.ru/" class="copyright" aria-label="copyright">
-            <img src="./image/htmlacademy.png" alt="htmlacademy" width="115" height="33">
+            <img src="./image/footer/htmlacademy.svg" alt="htmlacademy" width="115" height="33">
           </a>
         </section> 
       </div>   
