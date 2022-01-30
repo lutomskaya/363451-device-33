@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="./style.css" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header container">
       <a class="logo" aria-label="Логотип Девайс">
-        <img src="./image/logo.png" alt="Логотип Девайс" width="145" height="36">
+        <img src="./image/logo.svg" alt="Логотип Девайс" width="145" height="36">
       </a>
       <div class="main-header__bar">
         <form class="main-header__form" action="https://echo.htmlacademy.ru" method="get">
@@ -26,8 +26,7 @@
         </div>
       </div>
       <nav class="main-catalog main-nav">
-       <!--  тут не знаю кнопка это или элемент списка навигации (main-nav__list) с ссылкой? -->
-        <a href="./catalog.html">Каталог товаров</a>
+        <a class="main-nav__link" href="./catalog.html">Каталог товаров</a>
         <ul class="main-catalog__list">
           <li class="main-catalog__item"><a href="#" class="main-catalog__link">Виртуальная реальность</a></li>
           <li class="main-catalog__item"><a href="./catalog.html" class="main-catalog__link">Моноподы для селфи</a></li>
@@ -56,13 +55,13 @@
         <div class="slider-left">
           <ul class="slider-left__list">
             <li class="slider-left__item">
-              <img class="slider-left__img" src="./image/slider-1.png" alt="Квадракоптер" width="560" height="560" >
+              <img class="slider-left__img" src="./image/slider-promo/slider-1.png" alt="Квадракоптер" width="560" height="560" >
             </li>
             <li class="slider-left__item">
-              <img class="slider-left__img" src="./image/slider-2.png" alt="Фитнес-браслет" width="560" height="560">
+              <img class="slider-left__img" src="./image/slider-promo/slider-2.png" alt="Фитнес-браслет" width="560" height="560">
             </li>
             <li class="slider-left__item">
-              <img class="slider-left__img" src="./image/slider-3.png" alt="Палка для селфи" width="560" height="560">
+              <img class="slider-left__img" src="./image/slider-promo/slider-3.png" alt="Палка для селфи" width="560" height="560">
             </li>
           </ul>
           <button class="slider-left__button" type="button" aria-label="Слайдер назад"></button>
@@ -117,37 +116,37 @@
         <ul class="categories__list">
           <li class="categories__item">
             <div class="categories__img">
-              <img src="./image/index-catalog-images.png" alt="Виртуальная реальность" width="160" height="160">
+              <img src="./image/categories/categories-1.svg" alt="Виртуальная реальность" width="97" height="55">
             </div>  
             <h3>Виртуальная реальность</h3>
           </li>
           <li class="categories__item">
             <div class="categories__img">
-              <img src="./image/index-catalog-images2.png" alt="Моноподы для селфи" width="160" height="160">
+              <img src="./image/categories/categories-2.svg" alt="Моноподы для селфи" width="86" height="117">
             </div>  
             <h3>Моноподы для селфи</h3>
           </li>
           <li class="categories__item">
             <div class="categories__img">
-              <img src="./image/index-catalog-images3.png" alt="Экшн-камеры" width="160" height="160">
+              <img src="./image/categories/categories-3.svg" alt="Экшн-камеры" width="71" height="87">
             </div>  
             <h3>Экшн-камеры</h3>
           </li>
           <li class="categories__item">
             <div class="categories__img">
-              <img src="./image/index-catalog-images4.png" alt="Фитнес-браслеты" width="160" height="160">
+              <img src="./image/categories/categories-4.svg" alt="Фитнес-браслеты" width="107" height="65">
             </div>  
             <h3>Фитнес-браслеты</h3>
           </li>
           <li class="categories__item">
             <div class="categories__img">
-              <img src="./image/index-catalog-images5.png" alt="Умные часы" width="160" height="160">
+              <img src="./image/categories/categories-5.svg" alt="Умные часы" width="56" height="98">
             </div>  
             <h3>Умные часы</h3>
           </li>
           <li class="categories__item">
             <div class="categories__img">
-              <img src="./image/index-catalog-images6.png" alt="Квадрокоптеры" width="160" height="160">
+              <img src="./image/categories/categories-6.svg" alt="Квадрокоптеры" width="132" height="69">
             </div>  
             <h3>Квадрокоптеры</h3>
           </li>
@@ -156,7 +155,7 @@
       <section class="service-slider delivery-main">
         <div class="container">
           <h2 class="visually-hidden">сервис</h2>
-          <div class="servis-slider__inner">
+          <div class="service-slider__inner">
             <ul class="service-slider__list">
               <li class="link service-slider__item service-slider__item--active">Доставка</li>
               <li class="link service-slider__item">Гарантия</li>
@@ -228,7 +227,7 @@
       <div class="main-footer__inner container">
         <div class="main-footer__content">
           <a class="logo-footer" aria-label="Логотип Девайс">
-            <img src="./image/Group.png" alt="Логотип Девайс" width="145" height="36">
+            <img src="./image/logo-footer.svg" alt="Логотип Девайс" width="145" height="36">
           </a>
           <p class="main-footer__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </div>
@@ -250,13 +249,25 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <div class="socials">
             <ul class="socials-list">
-              <li class="socials-link"><a href="https://www.facebook.com/htmlacademy"><img src="./image/Vector1.png" width="9" height="18" alt="Фэйсбук"></a></li>
-              <li class="socials-link"><a href="https://www.instagram.com/htmlacademy"><img src="./image/Vector.png" width="16" height="16" alt="Инстаграм"></a></li>
-              <li class="socials-link"><a href="https://www.twitter.com/htmlacademy"><img src="./image/Vector3.png" width="15" height="14" alt="Твиттер"></a></li>
+              <li class="socials-link">
+                <a href="https://www.facebook.com/htmlacademy">
+                  <img src="./image/icons/facebook.svg" width="9" height="18" alt="Фэйсбук">
+                </a>
+              </li>
+              <li class="socials-link">
+                <a href="https://www.instagram.com/htmlacademy">
+                  <img src="./image/icons/instagram.svg" width="16" height="16" alt="Инстаграм">
+                </a>
+              </li>
+              <li class="socials-link">
+                <a href="https://www.twitter.com/htmlacademy">
+                  <img src="./image/icons/twitter.svg" width="15" height="14" alt="Твиттер">
+                </a>
+              </li>
             </ul>
           </div> 
           <a href="https://htmlacademy.ru/" class="copyright" aria-label="copyright">
-            <img src="./image/htmlacademy.png" alt="htmlacademy" width="115" height="33">
+            <img src="./image/icons/htmlacademy.svg" alt="htmlacademy" width="115" height="33">
           </a>
         </section> 
       </div>   

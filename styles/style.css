@@ -1,5 +1,38 @@
 /*Global*/
 
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/rubik-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+
 body {
   min-width: 1160px;
   margin: 0;
@@ -12,10 +45,6 @@ body {
 
   color: #444444;
   background-color: #FFFFFF;
-}
-
-a {
-  text-decoration: none;
 }
 
 img {
@@ -58,6 +87,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   background-color: #FFE17F;
+  color: #000000;
 }
 
 .logo {
@@ -66,21 +96,29 @@ input[type="radio"].visually-hidden {
   height: 36px;
 }
 
-.user-list,
-.main-nav__list,
-.main-catalog__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.main-header__form {
+  font-size: 16px;
+  line-height: 20px;
 }
-.main-nav a,
-.main-nav__item a {
+
+.user-list a {
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+
+  color: #000000;
+}
+
+.main-nav__item a,
+.main-nav__link {
   font-family: 'Raleway', Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
+  line-height: 21px;
   text-transform: uppercase;
+  text-decoration: none;
 
-  color: #444444;
+  color: #000000;
 }
 
 .user-item a,
