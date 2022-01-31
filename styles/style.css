@@ -84,6 +84,10 @@ input[type="radio"].visually-hidden {
   height: 36px;
 }
 
+.main-header__bar {
+  display: flex;
+}
+
 .main-header__form {
   font-size: 16px;
   line-height: 20px;
@@ -102,6 +106,7 @@ input[type="radio"].visually-hidden {
 
 .main-nav__item a,
 .main-nav__link {
+  padding: 10px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -111,10 +116,23 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.user-list {
+  display: flex;
+}
+
 .user-list a {
   text-decoration: none;
 
   color: #000000;
+}
+
+.main-catalog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-catalog__list {
+  display: none;
 }
 
 .main-catalog__link {
@@ -125,7 +143,16 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /*slider*/
+
+.slider {
+  display: flex;
+}
 
 .slider-left__item {
   width: 560px;
