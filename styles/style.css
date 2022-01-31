@@ -165,6 +165,37 @@ dt {
 
 /*categories*/
 
+.categories__item {
+  width: 160px;
+  height: 253px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.categories__item--image1 {
+  background-image: url("../image/categories/categories-1.svg");
+}
+
+.categories__item--image2 {
+  background-image: url("../image/categories/categories-2.svg");
+}
+
+.categories__item--image3 {
+  background-image: url("../image/categories/categories-3.svg");
+}
+
+.categories__item--image4 {
+  background-image: url("../image/categories/categories-4.svg");
+}
+
+.categories__item--image5 {
+  background-image: url("../image/categories/categories-5.svg");
+}
+
+.categories__item--image6 {
+  background-image: url("../image/categories/categories-6.svg");
+}
+
 .categories__item h3 {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
