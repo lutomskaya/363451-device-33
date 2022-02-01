@@ -14,14 +14,18 @@
         <form class="main-header__form" action="https://echo.htmlacademy.ru" method="get">
           <label>
             <input class="search" type="text" value="Текст поиска">
+            <svg width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)">
+              <path d="m15.7 15-3.1-3.1c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z" fill="#000"/></g><defs><clipPath id="a">
+              <path fill="#fff" transform="translate(0 .7)" d="M0 0h16v16H0z"/></clipPath></defs>
+            </svg>
           </label>  
           <button class="button" type="button">Найти</button>
         </form>
         <div class="main-nav main-header__user">
           <ul class="user-list">
-            <li class="user-item"><a href="#">Войти</a></li>
-            <li class="user-item"><a href="#">Сравнить</a></li>
-            <li class="user-item"><a href="#">Корзина</a></li>
+            <li class="user-item"><a class="user" href="#">Войти</a></li>
+            <li class="user-item"><a class="compare" href="#">Сравнить</a></li>
+            <li class="user-item"><a class="basket" href="#">Корзина</a></li>
           </ul>          
         </div>
       </div>
@@ -52,27 +56,13 @@
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
       <section class="slider container">
         <h2 class="visually-hidden">слайдер</h2>
-        <div class="slider-left">
-          <ul class="slider-left__list">
-            <li class="slider-left__item">
-              <img class="slider-left__img" src="./image/slider-promo/slider-1.png" alt="Квадракоптер" width="560" height="560" >
-            </li>
-            <li class="slider-left__item">
-              <img class="slider-left__img" src="./image/slider-promo/slider-2.png" alt="Фитнес-браслет" width="560" height="560">
-            </li>
-            <li class="slider-left__item">
-              <img class="slider-left__img" src="./image/slider-promo/slider-3.png" alt="Палка для селфи" width="560" height="560">
-            </li>
-          </ul>
-          <button class="slider-left__button" type="button" aria-label="Слайдер назад"></button>
-					<button class="slider-left__button" type="button" aria-label="Слайдер вперед"></button>
-        </div>  
-        <div class="slider-right">
-          <ul class="slider-right__list">
-            <li class="slider-right__item">
-              <h3 class="slider-right__title title">Порхает как бабочка, жалит как пчела!</h3>
+        <ol class="slider__list">
+          <li class="slider__item slide-1">
+            <img class="slider__img" src="./image/slider-promo/slider-1.png" alt="Квадракоптер" width="560" height="560" >
+            <div>
+              <h3 class="slider__title title">Порхает как бабочка, жалит как пчела!</h3>
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <a href="#" class="slider-right__link link">Подробнее</a>
+              <a href="#" class="slider__link link">Подробнее</a>
               <dl>
                 <dt>800 м</dt>
                 <dd>Дальность полета</dd>
@@ -80,20 +70,26 @@
                 <dt>50 м</dt>
                 <dd>Радиус поражения</dd>
               </dl>
-            </li>
-            <li class="slider-right__item">
-              <h3 class="slider-right__title title">Худеем правильно!</h3>
+            </div>
+          </li>
+          <li class="slider__item slide-2">
+            <img class="slider__img" src="./image/slider-promo/slider-2.png" alt="Фитнес-браслет" width="560" height="560">
+            <div>
+              <h3 class="slider__title title">Худеем правильно!</h3>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <a href="#" class="slider-right__link link">Подробнее</a>
+              <a href="#" class="slider__link link">Подробнее</a>
               <dl>
                 <dt>48 часов</dt>
                 <dd>Без подзарядки</dd>
               </dl>
-            </li>
-            <li class="slider-right__item">
-              <h3 class="slider-right__title title">Делай селфи, как Бен Стиллер!</h3>
+            </div>
+          </li>
+          <li class="slider__item slide-3">
+            <img class="slider__img" src="./image/slider-promo/slider-3.png" alt="Палка для селфи" width="560" height="560">
+            <div>
+              <h3 class="slider__title title">Делай селфи, как Бен Стиллер!</h3>
               <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-              <a href="#" class="slider-right__link link">Подробнее</a>
+              <a href="#" class="slider__link link">Подробнее</a>
               <dl>
                 <dt>8,5 м</dt>
                 <dd>Длина палки</dd>
@@ -104,33 +100,33 @@
                 <dt>Карбон</dt>
                 <dd>Материал</dd>
               </dl>
-            </li>
-          </ul>
-          <button type="button"></button>
-					<button type="button"></button>
-          <button type="button"></button>
-        </div>
+            </div>
+          </li>
+        </ol>
+        <button type="button"></button>
+        <button type="button"></button>
+        <button type="button"></button>
       </section>
       <section class="categories container">
         <h2 class="visually-hidden">Категории</h2>
         <ul class="categories__list">
           <li class="categories__item categories__item--image1">
-            <h3>Виртуальная реальность</h3>
+            <a href="#">Виртуальная реальность</a>
           </li>
           <li class="categories__item categories__item--image2">
-            <h3>Моноподы для селфи</h3>
+            <a href="#">Моноподы для селфи</a>
           </li>
           <li class="categories__item categories__item--image3">
-            <h3>Экшн-камеры</h3>
+            <a href="#">Экшн-камеры</a>
           </li>
           <li class="categories__item categories__item--image4">
-            <h3>Фитнес-браслеты</h3>
+            <a href="#">Фитнес-браслеты</a>
           </li>
           <li class="categories__item categories__item--image5">
-            <h3>Умные часы</h3>
+            <a href="#">Умные часы</a>
           </li>
           <li class="categories__item categories__item--image6"> 
-            <h3>Квадрокоптеры</h3>
+            <a href="#">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
