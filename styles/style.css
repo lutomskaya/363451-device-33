@@ -4,7 +4,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: url("fonts/raleway-800.woff2") format("woff2");
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -12,7 +12,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/rubik-400.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -20,7 +20,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/rubik-700.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -82,6 +82,18 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 145px;
   height: 36px;
+}
+
+.logo:hover {
+  opacity: 60%;
+}
+
+.logo:active {
+  opacity: 30%;
+}
+
+.logo:focus {
+  border: 2px solid #af4fff;
 }
 
 .main-header__bar {
@@ -171,7 +183,9 @@ input[type="radio"].visually-hidden {
 .link {
   display: inline-block;
 
-  font-family: "Raleway" Arial, sans-serif;
+  padding: 10px 40px;
+
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
   line-height: 21px;
   text-transform: uppercase;
@@ -179,6 +193,11 @@ input[type="radio"].visually-hidden {
 
   color: #000000;
   background-color: #ffe17f;
+  background-size: 8px 220px;
+}
+
+.link:active {
+  background-color: #ffcc33;
 }
 
 dd {
@@ -275,6 +294,10 @@ dt {
   height: 36px;
 }
 
+.logo path {
+  fill: #ffc700;
+}
+
 .main-footer__text,
 .main-footer__phone {
   font-size: 16px;
@@ -320,6 +343,18 @@ dt {
   text-decoration: none;
 
   color: #000000;
+}
+
+.breadcrumbs__link:hover {
+  opacity: 60%;
+}
+
+.breadcrumbs__link:active {
+  opacity: 30%;
+}
+
+.breadcrumbs__link:focus {
+  border: 2px solid #af4fff;
 }
 
 /*sorting*/
