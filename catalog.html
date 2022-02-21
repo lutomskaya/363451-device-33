@@ -138,8 +138,18 @@
           </form>
           <div class="catalog-right-column">
             <div class="sorting">
-            <p class="sorting__title">Сортировка:</p>
-            <p class="sorting__text">Популярные</p>
+              <p class="sorting__title">Сортировка:</p>
+              <select class="sorting-control">
+                <option value="popular">Популярные</option>
+                <option value="cheap">Дешёвые</option>
+                <option value="expensive">Дорогие</option>
+              </select>
+              <a class="sorting-button-up" href="#">
+                <span class="visually-hidden">От меньшего к большему</span>
+              </a>
+              <a class="sorting-button-down" href="#">
+                <span class="visually-hidden">От большего к меньшему</span>
+              </a>
             </div>
             <ul class="product__list">
               <li class="catalog-product__item">
@@ -214,24 +224,29 @@
               <path d="M132.892 29.5888C134.993 29.5888 136.695 28.7888 137.695 27.6888L143.799 31.1888C141.298 34.5888 137.595 36.3888 132.792 36.3888C124.186 36.3888 118.782 30.5888 118.782 23.0888C118.782 15.5888 124.286 9.78882 132.191 9.78882C139.597 9.78882 145 15.4888 145 23.0888C145 24.1888 144.9 25.1888 144.7 26.0888H126.788C127.788 28.6888 130.09 29.5888 132.892 29.5888ZM137.595 20.4888C136.795 17.5888 134.493 16.4888 132.191 16.4888C129.289 16.4888 127.388 17.8888 126.688 20.4888H137.595Z" fill="black"/>
             </svg>
           </a>
-          <p class="main-footer__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <section class="main-footer__address">
+            <h2 class="visually-hidden">Адрес</h2>
+            <address class="address">
+              <p class="main-footer__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            </address>
+          </section>
         </div>
         <section class="footer-socials">
-          <nav class="main-nav main-nav--footer">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="#">Доставка</a>
+          <nav class="main-nav-footer">
+            <ul class="footer-socials__list">
+              <li class="footer-socials__item">
+                <a class="footer-social__link" href="#">Доставка</a>
               </li>
-              <li class="main-nav__item">
-                <a href="#">Гарантия</a>
+              <li class="footer-socials__item">
+                <a class="footer-social__link" href="#">Гарантия</a>
               </li>
-              <li class="main-nav__item">
-                <a href="#">Контакты</a>
+              <li class="footer-socials__item">
+                <a class="footer-social__link" href="#">Контакты</a>
               </li>
             </ul>
           </nav>
-          <h2 class="visually-hidden">Социальные сети</h2>
           <div class="socials">
+            <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="socials-list">
               <li class="socials-link">
                 <a href="https://www.facebook.com/htmlacademy">
