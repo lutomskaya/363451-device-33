@@ -207,7 +207,7 @@
       </section>
       <section class="special-offers">
         <div class="container">
-          <a href="#" class="special-offers__link">Доставим редкий товар под заказ</a>
+          <a href="#" class="open-modal-link special-offers__link">Доставим редкий товар под заказ</a>
         </div>
       </section>
       <section class="info-block container">
@@ -329,19 +329,28 @@
       </div>
     </footer>
     <section class="modal">
-      <button type="button" class="modal-close" aria-label="Закрыть"></button>
-      <h2 class="modal-title">Доставка под заказ</h2>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
-        <label for="name">Ваше имя:</label>
-        <input class="modal__name" id="name" type="text" value="Введите имя">
-        <label for="e-mail">Ваш e-mail:</label>
-        <input class="modal__email" id="e-mail" type="email" value="Ваш e-mail" required>
-        <label for="product">Что нужно привезти:</label>
-        <input class="modal__product" id="product" type="text" value="В свободной форме">
-        <label for="number">Количество:</label>
-        <input class="modal__number" id="number" type="number" value="1">
+      <button type="button" class="modal__close" aria-label="Закрыть"></button>
+      <h2 class="modal__title">Доставка под заказ</h2>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
+        <p class="modal-form__item">
+          <label for="name">Ваше имя:</label>
+          <input class="modal__name" id="name" type="text" value="Введите имя">
+        </p>
+        <p class="modal-form__item">
+          <label for="e-mail">Ваш e-mail:</label>
+          <input class="modal__email" id="e-mail" type="email" value="Ваш e-mail" required>
+        </p>
+        <p class="modal-form__item">  
+          <label for="product">Что нужно привезти:</label>
+          <input class="modal__product" id="product" type="text" value="В свободной форме">
+        </p>
+        <p class="modal-form__item">  
+          <label for="number">Количество:</label>
+          <input class="modal__number" id="number" type="number" value="1">
+        </p>  
         <button class="modal__button link" type="button">Отправить</button>
       </form>
     </section>
+    <script src="./js/script.js"></script>
   </body>
 </html>
