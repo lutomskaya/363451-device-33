@@ -33,9 +33,29 @@
             <a class="basket" href="#">Корзина</a>
           </li>
         </ul>
+        <section class="modal-basket">
+          <h2 class="visually-hidden">Список покупок</h2>
+          <ul class="modal-basket__list">
+            <li class="modal-basket__item">
+              <p class="modal-basket__image">
+                <img src="./image/icons/product-1-small.png" alt="Любительская селфи-палка" width="39" height="43">
+              </p>
+              <p class="modal-basket__title">Любительская селфи-палка</p>
+            </li>
+            <li class="modal-basket__item">
+              <p class="modal-basket__image">
+                <img src="./image/icons/product-2-small.png" alt="Профессиональная селфи-палка" width="39" height="43">
+              </p>
+              <p class="modal-basket__title">Профессиональная селфи-палка</p>
+            </li>
+          </ul>  
+          <p>Товаров:<span>2</span></p>
+          <p>Сумма:<span>2000 P</span></p>
+          <button class="modal-basket__button" type="button">Открыть корзину</button>
+        </section>
       </div>
       <nav class="main-catalog main-nav">
-        <a class="main-nav__link" href="./catalog.html">Каталог товаров</a>
+        <a class="main-nav__link main-nav__toggle main-catalog__closed">Каталог товаров</a>
         <ul class="main-catalog__list">
           <li class="main-catalog__item"><a href="#" class="main-catalog__link">Виртуальная реальность</a></li>
           <li class="main-catalog__item"><a href="./catalog.html" class="main-catalog__link">Моноподы для селфи</a></li>
@@ -233,19 +253,19 @@
         </nav>
         <section class="socials">
           <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="socials-list">
-            <li class="socials-link">
-              <a href="https://www.facebook.com/htmlacademy">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="https://www.facebook.com/htmlacademy">
                 <img src="./image/icons/facebook.svg" width="9" height="18" alt="Фэйсбук">
               </a>
             </li>
-            <li class="socials-link">
-              <a href="https://www.instagram.com/htmlacademy">
+            <li class="socials__item">
+              <a class="socials__link" href="https://www.instagram.com/htmlacademy">
                 <img src="./image/icons/instagram.svg" width="16" height="16" alt="Инстаграм">
               </a>
             </li>
-            <li class="socials-link">
-              <a href="https://www.twitter.com/htmlacademy">
+            <li class="socials__item">
+              <a class="socials__link" href="https://www.twitter.com/htmlacademy">
                 <img src="./image/icons/twitter.svg" width="15" height="14" alt="Твиттер">
               </a>
             </li>
@@ -270,5 +290,6 @@
         </a>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

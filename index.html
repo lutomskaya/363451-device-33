@@ -11,9 +11,9 @@
         <img src="./image/logo.svg" alt="Логотип Девайс" width="145" height="36">
       </a>
       <div class="main-header__user">
-        <form class="main-header__form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="main-header__form" name="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <label>
-            <input class="search" type="text" value="Текст поиска">
+            <input class="search" type="text" placeholder="Текст поиска">
             <svg width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)">
               <path d="m15.7 15-3.1-3.1c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z" fill="#000"/></g><defs><clipPath id="a">
               <path fill="#fff" transform="translate(0 .7)" d="M0 0h16v16H0z"/></clipPath></defs>
@@ -22,19 +22,39 @@
           <button class="search__button" type="button">Найти</button>
         </form>
         <ul class="user-list">
-          <li class="user-item user">
-            <a href="#">Войти</a>
+          <li class="user-item">
+            <a class="user" href="#">Войти</a>
           </li>
-          <li class="user-item compare">
-            <a href="#">Сравнить</a>
+          <li class="user-item">
+            <a class="compare" href="#">Сравнить</a>
           </li>
-          <li class="user-item basket">
-            <a href="#">Корзина</a>
+          <li class="user-item">
+            <a class="basket" href="#">Корзина</a>
           </li>
         </ul>
+        <section class="modal-basket">
+          <h2 class="visually-hidden">Список покупок</h2>
+          <ul class="modal-basket__list">
+            <li class="modal-basket__item">
+              <p class="modal-basket__image">
+                <img src="./image/icons/product-1-small.png" alt="Любительская селфи-палка" width="39" height="43">
+              </p>
+              <p class="modal-basket__title">Любительская селфи-палка</p>
+            </li>
+            <li class="modal-basket__item">
+              <p class="modal-basket__image">
+                <img src="./image/icons/product-2-small.png" alt="Профессиональная селфи-палка" width="39" height="43">
+              </p>
+              <p class="modal-basket__title">Профессиональная селфи-палка</p>
+            </li>
+          </ul>  
+          <p>Товаров:<span>2</span></p>
+          <p>Сумма:<span>2000 P</span></p>
+          <button class="modal-basket__button" type="button">Открыть корзину</button>
+        </section>
       </div>
       <nav class="main-catalog main-nav">
-        <a class="main-nav__link" href="./catalog.html">Каталог товаров</a>
+        <a class="main-nav__link main-nav__toggle main-catalog__closed">Каталог товаров</a>
         <ul class="main-catalog__list">
           <li class="main-catalog__item"><a href="#" class="main-catalog__link">Виртуальная реальность</a></li>
           <li class="main-catalog__item"><a href="./catalog.html" class="main-catalog__link">Моноподы для селфи</a></li>
@@ -153,22 +173,34 @@
           <h2 class="visually-hidden">Категории</h2>
           <ul class="categories__list">
             <li class="categories__items">
-              <a class="categories__item categories__item--image1" href="#">Виртуальная реальность</a>
+              <a class="categories__item categories__item--image1" href="#">
+                <p class="categories__text">Виртуальная реальность</p>
+              </a>
             </li>
             <li class="categories__items">
-              <a class="categories__item categories__item--image2" href="#">Моноподы для селфи</a>
+              <a class="categories__item categories__item--image2" href="#">
+                <p class="categories__text">Моноподы для селфи</p>
+              </a>
             </li>
             <li class="categories__items">
-              <a class="categories__item categories__item--image3" href="#">Экшн-камеры</a>
+              <a class="categories__item categories__item--image3" href="#">
+                <p class="categories__text">Экшн-камеры</p>
+              </a>
             </li>
             <li class="categories__items">
-              <a  class="categories__item categories__item--image4" href="#">Фитнес-браслеты</a>
+              <a  class="categories__item categories__item--image4" href="#">
+                <p class="categories__text">Фитнес-браслеты</p>
+              </a>
             </li>
             <li class="categories__items">
-              <a class="categories__item categories__item--image5" href="#">Умные часы</a>
+              <a class="categories__item categories__item--image5" href="#">
+                <p class="categories__text">Умные часы</p>
+              </a>
             </li>
             <li class="categories__items">
-              <a  class="categories__item categories__item--image6" href="#">Квадрокоптеры</a>
+              <a  class="categories__item categories__item--image6" href="#">
+                <p class="categories__text">Квадрокоптеры</p>
+              </a>
             </li>
           </ul>
         </div>
@@ -243,11 +275,11 @@
           <div class="subscription-form__inner">
             <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
               <label>
-                <input class="email" type="email" value="Ваш e-mail">
+                <input class="email" type="email" placeholder="Ваш e-mail">
               </label>
               <button class="subscription__button" type="button">Подписаться</button>
             </form>
-            <span>Это бесплатно</span>
+            <span class="subscription__span">Это бесплатно</span>
           </div>
         </div>
       </section>
@@ -282,19 +314,19 @@
         </nav>
         <section class="socials">
           <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="socials-list">
-            <li class="socials-link">
-              <a href="https://www.facebook.com/htmlacademy">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="https://www.facebook.com/htmlacademy">
                 <img src="./image/icons/facebook.svg" width="9" height="18" alt="Фэйсбук">
               </a>
             </li>
-            <li class="socials-link">
-              <a href="https://www.instagram.com/htmlacademy">
+            <li class="socials__item">
+              <a class="socials__link" href="https://www.instagram.com/htmlacademy">
                 <img src="./image/icons/instagram.svg" width="16" height="16" alt="Инстаграм">
               </a>
             </li>
-            <li class="socials-link">
-              <a href="https://www.twitter.com/htmlacademy">
+            <li class="socials__item">
+              <a class="socials__link" href="https://www.twitter.com/htmlacademy">
                 <img src="./image/icons/twitter.svg" width="15" height="14" alt="Твиттер">
               </a>
             </li>
@@ -302,7 +334,7 @@
         </section>
         <a class="main-footer__phone" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
         <a href="https://htmlacademy.ru/" class="copyright" aria-label="copyright">
-          <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="115" height="33" viewBox="0 0 115 33" fill="" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 12.9V15.5H2.5V12.9H0Z" fill="#FFC700"/>
             <path d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z" fill="#FFC700"/>
             <path d="M26.6 4.8H21.8V1.1H19.8V4.9H17.9V6.9H19.8V12.9C19.8 14.6 20.8 15.6 22.5 15.6H26.6V13.6H22.9C22.2 13.6 21.8 13.2 21.8 12.5V6.8H26.6V4.8Z" fill="#FFC700"/>
