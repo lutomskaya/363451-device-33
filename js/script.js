@@ -13,16 +13,16 @@ close.addEventListener('click', function (event) {
 });
 
 var basketLink = document.querySelector('.basket');
-var basketModal = document.querySelector('.modal-basket');
+var basketModal = document.querySelector('.popover-basket');
 
 basketLink.addEventListener('click', function (event) {
     event.preventDefault();
     basketModal.classList.toggle('modal__show');
 });
 
-var navMain = document.querySelector('.main-nav__link'); 
-var catalogLink = document.querySelector('.main-nav__toggle'); 
-var mainNav = document.querySelector('.main-catalog__list'); 
+var navMain = document.querySelector('.main-nav__link');
+var catalogLink = document.querySelector('.main-nav__toggle');
+var mainNav = document.querySelector('.main-catalog__list');
 
 catalogLink.addEventListener("click", function() {
     if (navMain.classList.contains("main-catalog__closed")) {

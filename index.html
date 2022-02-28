@@ -32,25 +32,31 @@
             <a class="basket" href="#">Корзина</a>
           </li>
         </ul>
-        <section class="modal-basket">
+        <section class="popover-basket">
           <h2 class="visually-hidden">Список покупок</h2>
-          <ul class="modal-basket__list">
-            <li class="modal-basket__item">
-              <p class="modal-basket__image">
-                <img src="./image/icons/product-1-small.png" alt="Любительская селфи-палка" width="39" height="43">
-              </p>
-              <p class="modal-basket__title">Любительская селфи-палка</p>
+          <ul class="popover-basket__list">
+            <li class="popover-basket__item">
+              <a class="popover-basket__link">
+                <p class="popover-basket__image">
+                  <img src="./image/icons/product-1-small.png" alt="Любительская селфи-палка" width="39" height="43">
+                </p>
+                <p class="popover-basket__title">Любительская селфи-палка</p>
+              </a>
+              <button class="popover-basket__button" type="button"><span class=" visually-hidden">Закрыть</span></button>
             </li>
-            <li class="modal-basket__item">
-              <p class="modal-basket__image">
-                <img src="./image/icons/product-2-small.png" alt="Профессиональная селфи-палка" width="39" height="43">
-              </p>
-              <p class="modal-basket__title">Профессиональная селфи-палка</p>
+            <li class="popover-basket__item">
+              <a class="popover-basket__link">
+                <p class="popover-basket__image">
+                  <img src="./image/icons/product-2-small.png" alt="Профессиональная селфи-палка" width="39" height="43">
+                </p>
+                <p class="popover-basket__title">Профессиональная селфи-палка</p>
+              </a>
+              <button class="popover-basket__button" type="button"><span class=" visually-hidden">Закрыть</span></button>
             </li>
-          </ul>  
+          </ul>
           <p>Товаров:<span>2</span></p>
           <p>Сумма:<span>2000 P</span></p>
-          <button class="modal-basket__button" type="button">Открыть корзину</button>
+          <button class="popover-basket__button-open" type="button">Открыть корзину</button>
         </section>
       </div>
       <nav class="main-catalog main-nav">
@@ -155,16 +161,16 @@
                 <span class="visually-hidden">1 товар</span>
               </button>
             </li>
-            <li class="slider-controls__item">  
+            <li class="slider-controls__item">
               <button class="slider-controls__button" type="button">
                 <span class="visually-hidden">2 товар</span>
               </button>
             </li>
-            <li class="slider-controls__item">  
+            <li class="slider-controls__item">
               <button class="slider-controls__button" type="button">
                 <span class="visually-hidden">3 товар</span>
               </button>
-            </li>  
+            </li>
           </ol>
         </div>
       </section>
@@ -363,14 +369,14 @@
           <label for="e-mail">Ваш e-mail:</label>
           <input class="modal__email" id="e-mail" type="email" value="Ваш e-mail" required>
         </p>
-        <p class="modal-form__item">  
+        <p class="modal-form__item">
           <label for="product">Что нужно привезти:</label>
           <input class="modal__product" id="product" type="text" value="В свободной форме">
         </p>
-        <p class="modal-form__item">  
+        <p class="modal-form__item">
           <label for="number">Количество:</label>
           <input class="modal__number" id="number" type="number" value="1">
-        </p>  
+        </p>
         <button class="modal__button link" type="button">Отправить</button>
       </form>
     </section>

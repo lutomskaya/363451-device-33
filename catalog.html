@@ -33,25 +33,31 @@
             <a class="basket" href="#">Корзина</a>
           </li>
         </ul>
-        <section class="modal-basket">
+        <section class="popover-basket">
           <h2 class="visually-hidden">Список покупок</h2>
-          <ul class="modal-basket__list">
-            <li class="modal-basket__item">
-              <p class="modal-basket__image">
-                <img src="./image/icons/product-1-small.png" alt="Любительская селфи-палка" width="39" height="43">
-              </p>
-              <p class="modal-basket__title">Любительская селфи-палка</p>
+          <ul class="popover-basket__list">
+            <li class="popover-basket__item">
+              <a class="popover-basket__link">
+                <p class="popover-basket__image">
+                  <img src="./image/icons/product-1-small.png" alt="Любительская селфи-палка" width="39" height="43">
+                </p>
+                <p class="popover-basket__title">Любительская селфи-палка</p>
+              </a>
+              <button class="popover-basket__button" type="button"><span class=" visually-hidden">Закрыть</span></button>
             </li>
-            <li class="modal-basket__item">
-              <p class="modal-basket__image">
-                <img src="./image/icons/product-2-small.png" alt="Профессиональная селфи-палка" width="39" height="43">
-              </p>
-              <p class="modal-basket__title">Профессиональная селфи-палка</p>
+            <li class="popover-basket__item">
+              <a class="popover-basket__link">
+                <p class="popover-basket__image">
+                  <img src="./image/icons/product-2-small.png" alt="Профессиональная селфи-палка" width="39" height="43">
+                </p>
+                <p class="popover-basket__title">Профессиональная селфи-палка</p>
+              </a>
+              <button class="popover-basket__button" type="button"><span class=" visually-hidden">Закрыть</span></button>
             </li>
-          </ul>  
+          </ul>
           <p>Товаров:<span>2</span></p>
           <p>Сумма:<span>2000 P</span></p>
-          <button class="modal-basket__button" type="button">Открыть корзину</button>
+          <button class="popover-basket__button-open" type="button">Открыть корзину</button>
         </section>
       </div>
       <nav class="main-catalog main-nav">
@@ -102,42 +108,61 @@
               <legend class="filter__title">Стоимость</legend>
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar"></div>
+                  <div class="bar" style="left: 17px; width: 119px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
                 </div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
-              </div>
-              <div class="price-controls">
-                <label class="price-controls-min" for="price-controls-min">
-                <input id="price-controls-min" type="text" value="от 0">
-                </label>
-                <label class="price-controls-max" for="price-controls-max">
-                <input id="price-controls-max" type="text" value="до 5000">
-                </label>
-              </div>
+                <div class="price-controls">
+                  <label class="price-controls-label" for="price-controls-min">
+                  <input class="range-input" id="price-controls-min" type="text" value="от 0">
+                  </label>
+                  <label class="price-controls-label" for="price-controls-max">
+                  <input class="range-input" id="price-controls-max" type="text" value="до 5000">
+                  </label>
+                </div>
             </fieldset>
             <fieldset class="filter__fieldset filter-checkbox">
               <legend class="filter__title">Цвет</legend>
               <ul class="filter-checkbox__list">
                 <li class="filter-checkbox__item">
-                  <input class="visually-hidden filter-input" id="checkbox-black" type="checkbox" name="checkbox" value="Черный" checked>
-                  <label for="checkbox-black">Черный</label>
+                  <label class="filter__control">
+                    <input class="visually-hidden filter-input" type="checkbox" name="checkbox" value="Черный" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Черный</span>
+                  </label>
                 </li>
                 <li class="filter-checkbox__item">
-                  <input class="visually-hidden filter-input" id="checkbox-white" type="checkbox" name="checkbox" value="Белый" checked>
-                  <label for="checkbox-white">Белый</label>
+                  <label class="filter__control">
+                    <input class="visually-hidden filter-input" type="checkbox" name="checkbox" value="Белый" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Белый</span>
+                  </label>
                 </li>
                 <li class="filter-checkbox__item">
-                  <input class="visually-hidden filter-input" id="checkbox-blue" type="checkbox" name="checkbox" value="Синий">
-                  <label for="checkbox-blue">Синий</label>
+                  <label class="filter__control">
+                    <input class="visually-hidden filter-input" type="checkbox" name="checkbox" value="Синий">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Синий</span>
+                  </label>
                 </li>
                 <li class="filter-checkbox__item">
-                  <input class="visually-hidden filter-input" id="checkbox-red" type="checkbox" name="checkbox" value="Красный">
-                  <label for="checkbox-red">Красный</label>
+                  <label class="filter__control">
+                    <input class="visually-hidden filter-input" type="checkbox" name="checkbox" value="Красный">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Красный</span>
+                  </label>
                 </li>
                 <li class="filter-checkbox__item">
-                  <input class="visually-hidden filter-input" id="checkbox-pink" type="checkbox" name="checkbox" value="Розовый">
-                  <label for="checkbox-pink">Розовый</label>
+                  <label class="filter__control">
+                    <input class="visually-hidden filter-input" type="checkbox" name="checkbox" value="Розовый">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Розовый</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -145,12 +170,18 @@
               <legend class="filter__title">Bluetooth</legend>
               <ul class="filter-radio__list">
                 <li class="filter-radio__item">
-                  <input class="visually-hidden filter-input" id="radio-yes" type="radio" name="radio" value="yes" checked>
-                  <label for="radio-yes">Есть</label>
+                  <label class="filter__control">
+                    <input class="visually-hidden filter-input" type="radio" name="radio" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Есть</span>
+                  </label>
                 </li>
                 <li class="filter-radio__item">
-                  <input class="visually-hidden filter-input" id="radio-no" type="radio" name="radio" value="no">
-                  <label for="radio-no">Нет</label>
+                  <label class="filter__control">
+                    <input class="visually-hidden filter-input" type="radio" name="radio">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Нет</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -164,10 +195,10 @@
                 <option value="cheap">Дешёвые</option>
                 <option value="expensive">Дорогие</option>
               </select>
-              <a class="sorting-button-up" href="#">
+              <a class="sorting-button sorting-button-up" href="#">
                 <span class="visually-hidden">От меньшего к большему</span>
               </a>
-              <a class="sorting-button-down" href="#">
+              <a class="sorting-button sorting-button-down" href="#">
                 <span class="visually-hidden">От большего к меньшему</span>
               </a>
             </div>
