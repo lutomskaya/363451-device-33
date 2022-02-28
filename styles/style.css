@@ -1095,14 +1095,14 @@ th {
     "address social copyright"
 }
 
-.logo {
+.logo-footer {
   display: block;
   width: 145px;
   height: 36px;
   grid-area: logo;
 }
 
-.logo path {
+.logo-footer path {
   fill: #ffc700;
 }
 
