@@ -1,5 +1,3 @@
-/* stylelint-disable declaration-block-semicolon-space-before */
-/* stylelint-disable declaration-colon-space-after */
 /*Global*/
 
 @font-face {
@@ -30,7 +28,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 800;
-  src: url("fonts/rubik-800.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -887,12 +885,24 @@ th {
   position: absolute;
   top: 0;
   right: 0;
-  width:136px;
-  height: 164px;
-  background-image: url("../image/slider-service/delivery.svg");
+  width:200px;
+  height: 200px;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+.delivery-main::after {
+  background-image: url("../image/slider-service/delivery.svg");
+}
+
+.garanty-main::after {
+  background-image: url("../image/slider-service/garanty.svg");
+}
+
+.credit-main::after {
+  background-image: url("../image/slider-service/credit.svg");
+}
+
 
 .special-offers {
   margin-bottom: 70px;
