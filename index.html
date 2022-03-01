@@ -29,39 +29,55 @@
             <a class="compare" href="#">Сравнить</a>
           </li>
           <li class="user-item">
-            <a class="basket" href="#">Корзина</a>
+            <a class="basket" href="#">Корзина
+              <div  class="basket-number">
+                <span>2</span>
+              </div>
+            </a>
           </li>
         </ul>
-        <section class="modal-basket">
+        <section class="popover-basket">
           <h2 class="visually-hidden">Список покупок</h2>
-          <ul class="modal-basket__list">
-            <li class="modal-basket__item">
-              <p class="modal-basket__image">
-                <img src="./image/icons/product-1-small.png" alt="Любительская селфи-палка" width="39" height="43">
-              </p>
-              <p class="modal-basket__title">Любительская селфи-палка</p>
+          <ul class="popover-basket__list">
+            <li class="popover-basket__item">
+              <a class="popover-basket__link">
+                <p class="popover-basket__image">
+                  <img src="./image/icons/product-1-small.png" alt="Любительская селфи-палка" width="39" height="43">
+                </p>
+                <p class="popover-basket__title">Любительская селфи-палка</p>
+              </a>
+              <button class="popover-basket__button" type="button"><span class=" visually-hidden">Закрыть</span></button>
             </li>
-            <li class="modal-basket__item">
-              <p class="modal-basket__image">
-                <img src="./image/icons/product-2-small.png" alt="Профессиональная селфи-палка" width="39" height="43">
-              </p>
-              <p class="modal-basket__title">Профессиональная селфи-палка</p>
+            <li class="popover-basket__item">
+              <a class="popover-basket__link">
+                <p class="popover-basket__image">
+                  <img src="./image/icons/product-2-small.png" alt="Профессиональная селфи-палка" width="39" height="43">
+                </p>
+                <p class="popover-basket__title">Профессиональная селфи-палка</p>
+              </a>
+              <button class="popover-basket__button" type="button"><span class=" visually-hidden">Закрыть</span></button>
             </li>
-          </ul>  
+          </ul>
           <p>Товаров:<span>2</span></p>
           <p>Сумма:<span>2000 P</span></p>
-          <button class="modal-basket__button" type="button">Открыть корзину</button>
+          <button class="popover-basket__button-open" type="button">Открыть корзину</button>
         </section>
       </div>
       <nav class="main-catalog main-nav">
         <a class="main-nav__link main-nav__toggle main-catalog__closed">Каталог товаров</a>
         <ul class="main-catalog__list">
-          <li class="main-catalog__item"><a href="#" class="main-catalog__link">Виртуальная реальность</a></li>
-          <li class="main-catalog__item"><a href="./catalog.html" class="main-catalog__link">Моноподы для селфи</a></li>
-          <li class="main-catalog__item"><a href="#" class="main-catalog__link">Экшн-камеры</a></li>
-          <li class="main-catalog__item"><a href="#" class="main-catalog__link">Фитнес-браслеты</a></li>
-          <li class="main-catalog__item"><a href="#" class="main-catalog__link">Умные часы</a></li>
-          <li class="main-catalog__item"><a href="#" class="main-catalog__link">Квадрокоптеры</a></li>
+          <div class="main-catalog__inner">
+            <li class="main-catalog__item"><a href="#" class="main-catalog__link">Виртуальная реальность</a></li>
+            <li class="main-catalog__item"><a href="./catalog.html" class="main-catalog__link">Моноподы для селфи</a></li>
+            <li class="main-catalog__item"><a href="#" class="main-catalog__link">Экшн-камеры</a></li>
+          </div>
+          <div class="main-catalog__inner">
+            <li class="main-catalog__item"><a href="#" class="main-catalog__link">Фитнес-браслеты</a></li>
+            <li class="main-catalog__item"><a href="#" class="main-catalog__link">Умные часы</a></li>
+          </div>
+          <div class="main-catalog__inner">
+            <li class="main-catalog__item"><a href="#" class="main-catalog__link">Квадрокоптеры</a></li>
+          </div>
         </ul>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -89,7 +105,7 @@
               <div class="slider__info-inner">
                 <h3 class="slider__title">Порхает как бабочка, жалит как пчела!</h3>
                 <p class="slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <a href="#" class="slider__button button">Подробнее</a>
+                <a href="#" class="button slider__button">Подробнее</a>
                 <table class="slider__table">
                   <tr>
                     <th>800 м</th>
@@ -155,16 +171,16 @@
                 <span class="visually-hidden">1 товар</span>
               </button>
             </li>
-            <li class="slider-controls__item">  
+            <li class="slider-controls__item">
               <button class="slider-controls__button" type="button">
                 <span class="visually-hidden">2 товар</span>
               </button>
             </li>
-            <li class="slider-controls__item">  
+            <li class="slider-controls__item">
               <button class="slider-controls__button" type="button">
                 <span class="visually-hidden">3 товар</span>
               </button>
-            </li>  
+            </li>
           </ol>
         </div>
       </section>
@@ -286,7 +302,7 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__inner container">
-        <a class="logo" aria-label="Логотип Девайс">
+        <a class="logo-footer" aria-label="Логотип Девайс">
           <svg width="145" height="37" viewBox="0 0 145 37" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M27.2188 0.388916V35.6889H19.6135V33.2889C17.9124 35.1889 15.5107 36.3889 12.1084 36.3889C5.5038 36.3889 0 30.5889 0 23.0889C0 15.5889 5.5038 9.78892 12.1084 9.78892C15.5107 9.78892 18.0124 10.9889 19.6135 12.8889V0.388916H27.2188ZM19.6135 23.0889C19.6135 19.2889 17.1118 16.8889 13.6094 16.8889C10.107 16.8889 7.60524 19.2889 7.60524 23.0889C7.60524 26.8889 10.107 29.2889 13.6094 29.2889C17.1118 29.1889 19.6135 26.8889 19.6135 23.0889Z" fill="black"/>
             <path d="M43.7298 29.5888C45.8313 29.5888 47.5325 28.7888 48.5332 27.6888L54.6374 31.1888C52.1356 34.5888 48.4331 36.3888 43.6298 36.3888C35.0238 36.3888 29.6201 30.5888 29.6201 23.0888C29.6201 15.5888 35.0238 9.78882 43.0294 9.78882C50.4345 9.78882 55.8382 15.4888 55.8382 23.0888C55.8382 24.1888 55.7381 25.1888 55.538 26.0888H37.6256C38.6263 28.6888 40.9279 29.5888 43.7298 29.5888ZM48.333 20.4888C47.5325 17.5888 45.2309 16.4888 42.9293 16.4888C40.0273 16.4888 38.126 17.8888 37.4255 20.4888H48.333Z" fill="black"/>
@@ -363,14 +379,14 @@
           <label for="e-mail">Ваш e-mail:</label>
           <input class="modal__email" id="e-mail" type="email" value="Ваш e-mail" required>
         </p>
-        <p class="modal-form__item">  
+        <p class="modal-form__item">
           <label for="product">Что нужно привезти:</label>
           <input class="modal__product" id="product" type="text" value="В свободной форме">
         </p>
-        <p class="modal-form__item">  
+        <p class="modal-form__item">
           <label for="number">Количество:</label>
           <input class="modal__number" id="number" type="number" value="1">
-        </p>  
+        </p>
         <button class="modal__button link" type="button">Отправить</button>
       </form>
     </section>
