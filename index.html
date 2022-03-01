@@ -29,7 +29,11 @@
             <a class="compare" href="#">Сравнить</a>
           </li>
           <li class="user-item">
-            <a class="basket" href="#">Корзина</a>
+            <a class="basket" href="#">Корзина
+              <div  class="basket-number">
+                <span>2</span>
+              </div>
+            </a>
           </li>
         </ul>
         <section class="popover-basket">
@@ -62,12 +66,18 @@
       <nav class="main-catalog main-nav">
         <a class="main-nav__link main-nav__toggle main-catalog__closed">Каталог товаров</a>
         <ul class="main-catalog__list">
-          <li class="main-catalog__item"><a href="#" class="main-catalog__link">Виртуальная реальность</a></li>
-          <li class="main-catalog__item"><a href="./catalog.html" class="main-catalog__link">Моноподы для селфи</a></li>
-          <li class="main-catalog__item"><a href="#" class="main-catalog__link">Экшн-камеры</a></li>
-          <li class="main-catalog__item"><a href="#" class="main-catalog__link">Фитнес-браслеты</a></li>
-          <li class="main-catalog__item"><a href="#" class="main-catalog__link">Умные часы</a></li>
-          <li class="main-catalog__item"><a href="#" class="main-catalog__link">Квадрокоптеры</a></li>
+          <div class="main-catalog__inner">
+            <li class="main-catalog__item"><a href="#" class="main-catalog__link">Виртуальная реальность</a></li>
+            <li class="main-catalog__item"><a href="./catalog.html" class="main-catalog__link">Моноподы для селфи</a></li>
+            <li class="main-catalog__item"><a href="#" class="main-catalog__link">Экшн-камеры</a></li>
+          </div>
+          <div class="main-catalog__inner">
+            <li class="main-catalog__item"><a href="#" class="main-catalog__link">Фитнес-браслеты</a></li>
+            <li class="main-catalog__item"><a href="#" class="main-catalog__link">Умные часы</a></li>
+          </div>
+          <div class="main-catalog__inner">
+            <li class="main-catalog__item"><a href="#" class="main-catalog__link">Квадрокоптеры</a></li>
+          </div>
         </ul>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -95,7 +105,7 @@
               <div class="slider__info-inner">
                 <h3 class="slider__title">Порхает как бабочка, жалит как пчела!</h3>
                 <p class="slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <a href="#" class="slider__button button">Подробнее</a>
+                <a href="#" class="button slider__button">Подробнее</a>
                 <table class="slider__table">
                   <tr>
                     <th>800 м</th>
