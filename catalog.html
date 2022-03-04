@@ -19,11 +19,13 @@
               <path fill="#fff" transform="translate(0 .7)" d="M0 0h16v16H0z"/></clipPath></defs>
             </svg>
           </label>
-          <button class="search__button" type="button">Найти</button>
+          <button class="main-header__button" type="button">Найти</button>
         </form>
         <ul class="user-list">
           <li class="user-item">
             <a class="user" href="#">Коля Петухов</a>
+          </li>
+          <li class="user-item">
             <a class="out" href="#">Выйти</a>
           </li>
           <li class="user-item">
@@ -66,20 +68,20 @@
       </div>
       <nav class="main-catalog main-nav">
         <a class="main-nav__link main-nav__toggle main-catalog__closed">Каталог товаров</a>
-        <ul class="main-catalog__list">
-          <div class="main-catalog__inner">
+        <div class="main-catalog__list">
+          <ul class="main-catalog__inner">
             <li class="main-catalog__item"><a href="#" class="main-catalog__link">Виртуальная реальность</a></li>
             <li class="main-catalog__item"><a href="./catalog.html" class="main-catalog__link main-catalog__link--current">Моноподы для селфи</a></li>
             <li class="main-catalog__item"><a href="#" class="main-catalog__link">Экшн-камеры</a></li>
-          </div>
-          <div class="main-catalog__inner">
+          </ul>
+          <ul class="main-catalog__inner">
             <li class="main-catalog__item"><a href="#" class="main-catalog__link">Фитнес-браслеты</a></li>
             <li class="main-catalog__item"><a href="#" class="main-catalog__link">Умные часы</a></li>
-          </div>
-          <div class="main-catalog__inner">
+          </ul>
+          <ul class="main-catalog__inner">
             <li class="main-catalog__item"><a href="#" class="main-catalog__link">Квадрокоптеры</a></li>
-          </div>
-        </ul>
+          </ul>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="#">Доставка</a>
@@ -96,7 +98,7 @@
     <main class="main-container main-catalog">
       <header class="main-catalog__header container">
         <h1 class="main-catalog__title">Моноподы для селфи</h1>
-          <ul class="breadcrumbs__list">
+          <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
               <a href="./index.html" class="breadcrumbs__link">Главная</a>
             </li>
@@ -137,6 +139,7 @@
                   <input class="range-input" id="price-controls-max" type="text" value="5000">
                   </label>
                 </div>
+              </div>
             </fieldset>
             <fieldset class="filter__fieldset filter-checkbox">
               <legend class="filter__title">Цвет</legend>
@@ -214,7 +217,7 @@
                 <span class="visually-hidden">От большего к меньшему</span>
               </a>
             </div>
-            <ul class="product__list">
+            <ul class="catalog-product__list">
               <li class="catalog-product__item new">
                 <a class="catalog-product__image" href="#">
                   <img src="./image/catalog/product-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
@@ -256,15 +259,15 @@
                 <a class="button catalog-product__button" href="#">Подробнее</a>
               </li>
             </ul>
-            <button type="button" class="catalog__button">Загрузить ещё</button>
-            <ul class="catalog-pagination__list">
-              <li class="catalog-pagination__item catalog-pagination__link--back catalog-pagination__link--disabled"><a class="catalog-pagination__link">Назад</a></li>
+            <button type="button" class="catalog-right-column__button">Загрузить ещё</button>
+            <ul class="catalog-pagination">
+              <li class="catalog-pagination__item catalog-pagination__item--back catalog-pagination__item--disabled"><a class="catalog-pagination__link">Назад</a></li>
               <li class="catalog-pagination__item catalog-pagination__item--current"><a class="catalog-pagination__link">1</a></li>
               <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="#">2</a></li>
               <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="#">3</a></li>
               <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="#">...</a></li>
               <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="#">15</a></li>
-              <li class="catalog-pagination__item catalog-pagination__link--next"><a class="catalog-pagination__link" href="#">Вперёд</a></li>
+              <li class="catalog-pagination__item catalog-pagination__item--next"><a class="catalog-pagination__link" href="#">Вперёд</a></li>
             </ul>
           </div>
         </div>
@@ -285,16 +288,16 @@
         <address class="address">
           <p class="main-footer__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
-        <nav class="main-nav-footer">
+        <nav class="main-nav-footer footer-socials">
           <ul class="footer-socials__list">
             <li class="footer-socials__item">
-              <a class="footer-social__link" href="#">Доставка</a>
+              <a class="footer-socials__link" href="#">Доставка</a>
             </li>
             <li class="footer-socials__item">
-              <a class="footer-social__link" href="#">Гарантия</a>
+              <a class="footer-socials__link" href="#">Гарантия</a>
             </li>
             <li class="footer-socials__item">
-              <a class="footer-social__link" href="#">Контакты</a>
+              <a class="footer-socials__link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
