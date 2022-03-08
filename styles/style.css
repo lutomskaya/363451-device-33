@@ -112,7 +112,7 @@ input[type="radio"].visually-hidden {
 /*header*/
 
 .main-header {
-  padding: 0 55px 28px 60px;
+  padding: 0 55px 21px 60px;
   box-sizing: border-box;
 
   background-image: linear-gradient(#ffffff 23px, #ffe17f 23px);
@@ -125,11 +125,11 @@ input[type="radio"].visually-hidden {
   height: 36px;
 }
 
-.logo:hover {
+.logo[href]:hover {
   opacity: 60%;
 }
 
-.logo:active {
+.logo[href]:active {
   opacity: 30%;
 }
 
@@ -226,7 +226,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-item:first-child {
-  width: 170px;
+  width: 172px;
   margin-right: auto;
 }
 
@@ -234,14 +234,27 @@ input[type="radio"].visually-hidden {
   padding-right: 0;
 }
 
-
-.user-list a {
+.user,
+.compare,
+.basket {
   padding: 10px 0;
-  padding-left: 47px;
+  margin-left: 22px;
 
   text-decoration: none;
 
   color: #000000;
+}
+
+.user {
+  padding-left: 31px;
+}
+
+.compare {
+  padding-left: 24px;
+}
+
+.basket {
+  padding-left: 44px;
 }
 
 .user:hover,
@@ -277,17 +290,14 @@ input[type="radio"].visually-hidden {
 .main-nav a:focus,
 .user:focus,
 .compare:focus,
-.basket:focus,
-.user a:focus::before,
-.compare:focus::before,
-.basket:focus::before {
+.basket:focus {
   outline: 2px solid #af4fff;
 }
 
 .user::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 9px;
   left: 26px;
   width: 16px;
   height: 17px;
@@ -297,6 +307,7 @@ input[type="radio"].visually-hidden {
 }
 
 .out {
+  text-decoration: none;
   opacity: 0.3;
 }
 
@@ -304,7 +315,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 9px;
-  left: 33px;
+  left: 25px;
   width: 16px;
   height: 17px;
   background-image: url("../image/icons/compare.svg");
@@ -316,7 +327,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 6px;
-  left: 28px;
+  left: 35px;
   width: 31px;
   height: 31px;
   background-image: url("../image/icons/basket.svg");
@@ -326,8 +337,8 @@ input[type="radio"].visually-hidden {
 
 .basket-number {
   position: absolute;
-  top: 5px;
-  left: 12px;
+  top: 4px;
+  left: 20px;
 
   display: block;
   width: 21px;
@@ -497,7 +508,7 @@ input[type="radio"].visually-hidden {
 .main-nav__link {
   position: relative;
 
-  padding: 13px 100px 10px 0;
+  padding: 12px 100px 17px 0;
 
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -945,6 +956,15 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
 }
 
+.service-slider__item--active:hover {
+  background-color: #000000;
+  color: rgba(255, 225, 127, 0.5);
+}
+
+.service-slider__item--active:active {
+color: rgba(255, 225, 127, 0.3);
+}
+
 .delivery-main {
   width: 760px;
   padding-bottom: 144px;
@@ -1030,6 +1050,10 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.special-offers__link:focus {
+  outline: 2px solid #af4fff;
+}
+
 .special-offers__link::before {
   content: "";
   position: absolute;
@@ -1067,7 +1091,7 @@ input[type="radio"].visually-hidden {
 .info-block {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 68px;
+  margin-bottom: 57px;
 }
 
 .info-block__title {
@@ -1135,7 +1159,7 @@ input[type="radio"].visually-hidden {
 
 .contacts__text {
   width: 498px;
-  margin: 0 0 30px;
+  margin: 0 0 26px;
 
   color: #444444;
 }
@@ -1175,7 +1199,7 @@ input[type="radio"].visually-hidden {
 
 .contacts__link {
   width: 243px;
-  padding: 11px 10px;
+  padding: 20px 10px;
 
   letter-spacing: 0.2em;
 }
@@ -1487,7 +1511,8 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 115px;
   height: 33px;
-  padding: 14px 61px;
+  padding: 13px 10px;
+  margin-left: 50px;
 }
 
 .copyright:hover path {
@@ -2278,12 +2303,18 @@ input[type="radio"].visually-hidden {
 
   display: grid;
   grid-template-columns: 226px auto;
-  grid-template-rows: 380px 40px;
+  grid-template-rows: 382px 40px;
   row-gap: 34px;
+  box-sizing: border-box;
+}
+
+.catalog-product__item:focus-within {
+  outline: 2px solid #af4fff;
 }
 
 .catalog-product__image {
   grid-column: 1/-1;
+  outline: 1px solid #444444;
 }
 
 .catalog-product__price {
@@ -2315,6 +2346,10 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.catalog-product__link:focus {
+  outline: none;
+}
+
 .catalog-product__button {
   position: absolute;
   top: 170px;
@@ -2333,8 +2368,8 @@ input[type="radio"].visually-hidden {
   z-index: 2;
 
   display: none;
-  width: 360px;
-  height: 380px;
+  width: 362px;
+  height: 382px;
 
   background: rgba(240, 240, 240, 0.8);
 }
