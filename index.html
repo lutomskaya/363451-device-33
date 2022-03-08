@@ -19,7 +19,7 @@
               <path fill="#fff" transform="translate(0 .7)" d="M0 0h16v16H0z"/></clipPath></defs>
             </svg>
           </label>
-          <button class="search__button" type="button">Найти</button>
+          <button class="main-header__button" type="button">Найти</button>
         </form>
         <ul class="user-list">
           <li class="user-item">
@@ -64,21 +64,21 @@
         </section>
       </div>
       <nav class="main-catalog main-nav">
-        <a class="main-nav__link main-nav__toggle main-catalog__closed">Каталог товаров</a>
-        <ul class="main-catalog__list">
-          <div class="main-catalog__inner">
+        <a href="#" class="main-nav__link main-nav__toggle main-catalog__closed">Каталог товаров</a>
+        <div class="main-catalog__list">
+          <ul class="main-catalog__inner">
             <li class="main-catalog__item"><a href="#" class="main-catalog__link">Виртуальная реальность</a></li>
             <li class="main-catalog__item"><a href="./catalog.html" class="main-catalog__link">Моноподы для селфи</a></li>
             <li class="main-catalog__item"><a href="#" class="main-catalog__link">Экшн-камеры</a></li>
-          </div>
-          <div class="main-catalog__inner">
+          </ul>
+          <ul class="main-catalog__inner">
             <li class="main-catalog__item"><a href="#" class="main-catalog__link">Фитнес-браслеты</a></li>
             <li class="main-catalog__item"><a href="#" class="main-catalog__link">Умные часы</a></li>
-          </div>
-          <div class="main-catalog__inner">
+          </ul>
+          <ul class="main-catalog__inner">
             <li class="main-catalog__item"><a href="#" class="main-catalog__link">Квадрокоптеры</a></li>
-          </div>
-        </ul>
+          </ul>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="#">Доставка</a>
@@ -224,13 +224,19 @@
           <h2 class="visually-hidden">сервис</h2>
           <div class="service-slider__inner">
             <ul class="service-slider__list">
-              <li class="service-slider__item service-slider__item--active">Доставка</li>
-              <li class="service-slider__item button">Гарантия</li>
-              <li class="service-slider__item button">Кредит</li>
+              <li>
+                <a href="#" class="service-slider__item service-slider__item--active">Доставка</a>
+              </li>
+              <li>
+                <a href="#" class="service-slider__item button">Гарантия</a>
+              </li>
+              <li>
+                <a href="#" class="service-slider__item button">Кредит</a>
+              </li>
             </ul>
           </div>
-          <div class="delivery-main__inner">
-            <div class="delivery-main delivery-main__item delivery-main__item--active">
+          <div class="delivery-main">
+            <div class="delivery-main__item delivery-main__item--active">
               <h3 class="delivery-main__title">Доставка</h3>
               <p class="delivery-main__text">
                 Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
@@ -252,6 +258,7 @@
         </div>
       </section>
       <section class="special-offers">
+        <h2 class="visually-hidden">Спецпредложения</h2>
         <div class="container">
           <a href="#" class="open-modal-link special-offers__link">Доставим редкий товар под заказ</a>
         </div>
@@ -282,11 +289,11 @@
       </section>
       <section class="subscription">
         <div class="container">
-          <div class="subscription-text__inner">
+          <div class="subscription__inner-text">
             <h2 class="subscription__title">Подпишитесь на рассылку</h2>
             <p class="subscription__text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           </div>
-          <div class="subscription-form__inner">
+          <div class="subscription__inner-form">
             <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
               <label>
                 <input class="email" type="email" placeholder="Ваш e-mail">
@@ -313,16 +320,16 @@
         <address class="address">
           <p class="main-footer__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
-        <nav class="main-nav-footer">
+        <nav class="main-nav-footer footer-socials">
           <ul class="footer-socials__list">
             <li class="footer-socials__item">
-              <a class="footer-social__link" href="#">Доставка</a>
+              <a class="footer-socials__link" href="#">Доставка</a>
             </li>
             <li class="footer-socials__item">
-              <a class="footer-social__link" href="#">Гарантия</a>
+              <a class="footer-socials__link" href="#">Гарантия</a>
             </li>
             <li class="footer-socials__item">
-              <a class="footer-social__link" href="#">Контакты</a>
+              <a class="footer-socials__link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -368,24 +375,43 @@
     <section class="modal">
       <button type="button" class="modal__close" aria-label="Закрыть"></button>
       <h2 class="modal__title">Доставка под заказ</h2>
-      <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
-        <p class="modal-form__item">
-          <label for="name">Ваше имя:</label>
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="modal-form__item modal-form__item--name">
+          <label class="name-label" for="name">Ваше имя:</label>
           <input class="modal__name" id="name" type="text" value="Введите имя">
+          <span class="modal-form__text">Добавьте имя</span>
         </p>
-        <p class="modal-form__item">
-          <label for="e-mail">Ваш e-mail:</label>
+        <p class="modal-form__item modal-form__item--email">
+          <label class="email-label" for="e-mail">Ваш e-mail:</label>
           <input class="modal__email" id="e-mail" type="email" value="Ваш e-mail" required>
+          <span class="modal-form__text">Забавный у вас адрес</span>
         </p>
-        <p class="modal-form__item">
+        <p class="modal-form__item modal-form__item--description">
           <label for="product">Что нужно привезти:</label>
           <input class="modal__product" id="product" type="text" value="В свободной форме">
         </p>
-        <p class="modal-form__item">
-          <label for="number">Количество:</label>
-          <input class="modal__number" id="number" type="number" value="1">
+        <p class="modal-form__item quantity">
+          <label class="quantity__label">Количество:
+            <button class="quantity__button-tooltip" type="button">i</button>
+            <span class="quantity__tooltip">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+          </label>
+          <span class="quantity__wrapper">
+            <button class="quantity__button" type="button">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 7H0V9H16V7Z" fill="black"/>
+              </svg>
+              <span class="visually-hidden">Уменьшить</span>
+            </button>
+            <input class="modal__number" type="number" value="1" name="quantity">
+            <button class="quantity__button" type="button">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
+              </svg>
+              <span class="visually-hidden">Увеличить</span>
+            </button>
+          </span>
         </p>
-        <button class="modal__button link" type="button">Отправить</button>
+        <button class="modal__button button" type="button">Отправить</button>
       </form>
     </section>
     <script src="./js/script.js"></script>
