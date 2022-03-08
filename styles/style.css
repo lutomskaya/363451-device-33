@@ -1827,7 +1827,7 @@ color: rgba(255, 225, 127, 0.3);
   background-color: #ebebeb;
 }
 
-.quantity__button:hover > svg > path {
+.quantity__button:hover path {
   fill-opacity: 0.6;
 }
 
