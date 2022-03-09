@@ -52,6 +52,11 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .main-container {
   flex-grow: 1;
 }
@@ -152,7 +157,7 @@ input[type="radio"].visually-hidden {
 
 .main-header__form input {
   width: 305px;
-  height: 37px;
+  height: 40px;
   margin: 0;
   padding-left: 48px;
 
@@ -178,14 +183,13 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header__button {
-  display: inline-block;
+  display: block;
   width: 158px;
-  height: 43px;
 
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 34px;
 
   background-color: inherit;
   color: inherit;
@@ -204,9 +208,22 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.main-header__button:focus,
-.search:focus {
+.main-header__button:focus {
+  outline: none;
+}
+
+.main-header__form button:focus-within {
   outline: 2px solid #af4fff;
+  outline-offset: 2px;
+} 
+ 
+.main-header__form label:focus-within {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.search:focus {
+  outline: none;
 }
 
 .user-list {
@@ -227,7 +244,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-item:first-child {
-  width: 172px;
+  max-width: 172px;
   margin-right: auto;
 }
 
@@ -1410,15 +1427,17 @@ color: rgba(255, 225, 127, 0.3);
 .footer-socials__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 449px;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.footer-socials__item:not(:last-child) {
+/* .footer-socials__item:not(:last-child) {
   margin-right: 34px;
-}
+} */
 
 .footer-socials__link {
   padding: 10px 0;
@@ -1636,7 +1655,7 @@ color: rgba(255, 225, 127, 0.3);
   grid-area: quantity;
 }
 
-.modal-form label {
+.modal-form__label {
   margin: 0;
   margin-bottom: 14px;
 
@@ -1649,6 +1668,10 @@ color: rgba(255, 225, 127, 0.3);
 .name-label,
 .email-label {
   position: relative;
+}
+
+.quantity__label {
+  margin-bottom: 0;
 }
 
 .name-label::after,
@@ -1959,6 +1982,8 @@ color: rgba(255, 225, 127, 0.3);
 
 .bar {
   position: absolute;
+  left: 9px;
+  width: 102px;
   height: 2px;
 
   background: #000000;
@@ -2027,6 +2052,11 @@ color: rgba(255, 225, 127, 0.3);
 
 .price-controls-label {
   display: flex;
+  margin-left: 0;
+}
+
+.price-controls-label--right {
+  margin-right: 69px;
 }
 
 .range-input {
@@ -2367,6 +2397,19 @@ color: rgba(255, 225, 127, 0.3);
 
   display: none;
   width: 210px;
+}
+
+.catalog-product__button:hover {
+  background-color: #ffe17f;
+}
+
+.catalog-product__button:active,
+.catalog-product__button:active.button::before {
+  background-color: #ffcc33;
+}
+
+.catalog-product__button:focus {
+  outline: 2px solid #af4fff;
 }
 
 .catalog-product__item::after {
