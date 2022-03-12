@@ -1435,10 +1435,6 @@ color: rgba(255, 225, 127, 0.3);
   list-style: none;
 }
 
-/* .footer-socials__item:not(:last-child) {
-  margin-right: 34px;
-} */
-
 .footer-socials__link {
   padding: 10px 0;
 
